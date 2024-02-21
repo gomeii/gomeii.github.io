@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Gomez Personal Website</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- META Properties not super important -->
+    <!-- <link rel='stylesheet' id='turnwall-style-css'  href='https://www.turnwall.com/wp-content/themes/turnwall_theme/style.css?ver=3.2.52' type='text/css' media='all' /> -->
+    <style id='global-styles-inline-css' type='text/css'>
+      body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+    </style>
+</head>
+
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="style.css"> 
+  <span id="top"></span>
+
+    <!-- Navbar when screen is maximized or fullscreen-->
+    <header class="header-top">
+     
+      <nav class="navbar navbar-trans navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src=Images/ProjectImages/Logo.png width="15%"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse container-fluid" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="desertswallow.html">Capstone</a></li>   
+              <li class="nav-item button"><a href="GomezAlex2024(Resume).pdf" class="" target="_blank"><button type="button"
+                    class="btn btn-outline-dark btn-sm">Resume</button></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- Introduction -->
+    <div class="fluid-container landing-page">
+      <div class="row introduction">
+        <div class="col personal-quote" >
+          <h1 class="display-highlight"><i>Hi, I'm Alex</i></h1>
+          <p class="intro">Engineer, hard-worker, and life long learner</p>
+        </div>
+        <div class="col">
+          <img class="headshot" src="Headshots/ProfessionalHeadshot.jpg" alt="" data-eio="l" /></noscript>
+        </div>
+      </div>
+    </div>
+    <!-- Main Container of Page (Contains All of the Subelements)-->
+    <div class="row" >
+      <!-- Scroll Navbar -->
+      <div class="col-3 scroll-nav">
+        <nav id="scrollnav" class="navbar-nav-scroll">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#About">About Me</a>
+            <a class="nav-link" href="#Experience">Experience</a>
+            <a class="nav-link" href="#Projects">Projects</a>
+            <a class="nav-link" href="#Contact">Contact Me</a>
+          </nav>
+        </nav>
+      </div>
+      <!-- Content -->
+      <div class="col main-content-container ">
+        <div data-bs-spy="scroll" data-bs-target="#scrollnav" data-bs-smooth-scroll="false" class=" tabindex="0">
+          <section id="About">
+            <h4>About Me</h4>
+            <div class="AboutMeText">
+              <p>Hello I'm Alex Gomez. I am a Texas A&M University graduate with a Bachelors of Science in Aerospace Engineering and
+                a minor in Computer Science. I am a native spanish speaker from Venezuelan-Cuban background. I have completed courses
+                throughout my academic career at Texas A&M which have given me a strong foundation in the areas of combustive propulsion,
+                structural mechanics, aerodynamics & control, and astrodynamics. I have also explored the foundations of data structures,
+                algorithms, operating systems, and computer architecture through my computer science minor. I hope to use all that I have learned,
+                in industry working for a company that focuses on quality and excellence for its customers as well as its employees.
+                I am excited to see what the next step in my journey will be!    
+              </p>
+            </div>
+          </section>
+          <!-- Section Divider -->
+          <section id="Experience">
+              <div>
+                <div class="container">
+                  <hr class="rule-lg" />
+              </div>
+                <h4>Experience</h4>
+                <div class="row section-experience">
+                <!-- First Tilting Card -->
+                <div class="tilting-card-wrapper col-lg-8">
+                  <div class="mouse-position-tracker"></div>
+                  <div class="mouse-position-tracker"></div>
+                  <div class="mouse-position-tracker"></div>
+                  <div class="mouse-position-tracker"></div>
+                  <div class="mouse-position-tracker"></div>
+                  <div class="mouse-position-tracker"></div>
+                  <div class="mouse-position-tracker"></div>
+                  <div class="mouse-position-tracker"></div>
+                  <div class="mouse-position-tracker"></div>
+                    <div class="tilting-card-content grid">
+                      <article class="postcard dark blue" data-tilt data-tilt-scale="0.95" data-tilt-perspective="1750">
+                        <a class="companylogo-container">
+                          <img class="CompanyLogo" src="CompanyLogos/BellFlightLogo.png" alt="Image Title" />
+                        </a>
+                          <div class="postcard__text postcard__text-left">
+                            <h1 class="tile-text text-title blue"><a>Product Cybersecurity Engineer</a></h1>
+                            <div class="tile-text text-time">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                              </svg><span> </span>July 2023 - Present
+                            </div>
+                            <!-- Description -->
+                            <div class="tile-text text-subtitle">
+                              Researched and helped develop Cybersecurity Architecture for the Bell Future Long Range Assault Aircraft (FLRAA) Program.
+                            </div>
+                            <!-- Skills Used -->
+                            <ul class="skills-used">
+                              <li class="tag__item tag-one">
+                              <img class="iconify icon" src="SoftwareLogos/SysMLLogo.jpg" >
+                                CAMEO/SysML
+                              </li>
+                              <li class="tag__item">
+                                <span class="iconify icon">
+                                <img class="icon" src="SoftwareLogos/NetworkSecurity.png" >  
+                                Network Security
+                                </span>
+                              </li>
+                              <li class="tag__item">
+                                <span class="iconify icon">
+                                <img class="icon" src="SoftwareLogos/CryptographyLogo.png" >  
+                                Cryptography
+                                </span>
+                              </li>
+                          </ul>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <!-- Second Tilting Card -->
+                  <div class="tilting-card-wrapper col-lg-8">
+                    <div class="mouse-position-tracker"></div>
+                    <div class="mouse-position-tracker"></div>
+                    <div class="mouse-position-tracker"></div>
+                    <div class="mouse-position-tracker"></div>
+                    <div class="mouse-position-tracker"></div>
+                    <div class="mouse-position-tracker"></div>
+                    <div class="mouse-position-tracker"></div>
+                    <div class="mouse-position-tracker"></div>
+                    <div class="mouse-position-tracker"></div>
+                      <div class="tilting-card-content grid">
+                        <article class="postcard dark blue" data-tilt data-tilt-scale="0.95" data-tilt-perspective="1750">
+                          <a class="companylogo-container">
+                            <img class="CompanyLogo" src="CompanyLogos/TextronSystemsLogo.png" alt="Image Title" />
+                          </a>
+                            <div class="postcard__text postcard__text-left">
+                              <h1 class="tile-text text-title blue"><a>Aerospace Engineer Intern</a></h1>
+                              <div class="tile-text text-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                </svg><span> </span>May 2022 - August 2022
+                              </div>
+                              <!-- Description -->
+                              <div class="tile-text text-subtitle">
+                                Helped the Air Systems team update tools necessary for flight analysis of the new Mk IV Hybrid Quad autopilot.
+                              </div>
+                              <!-- Skills Used -->
+                              <ul class="skills-used">
+                                <li class="tag__item tag-one">
+                                <img class="iconify icon" src="SoftwareLogos/MatlabLogo.png" >
+                                  Matlab
+                                </li>
+                                <li class="tag__item">
+                                  <span class="iconify icon">
+                                  <img class="icon" src="SoftwareLogos/JavascriptLogo.png" >  
+                                  Javascript
+                                  </span>
+                                </li>
+                                <li class="tag__item">
+                                  <span class="iconify icon">
+                                  <img class="icon" src="SoftwareLogos/HTMLLogo.png" >  
+                                  HTML
+                                  </span>
+                                </li>
+                                <li class="tag__item">
+                                  <span class="iconify icon" data-icon="cib:amazon-aws" data-inline="false">
+                                  <img class="icon" src="SoftwareLogos/CSSLogo.png" >  
+                                  CSS
+                                  </span>
+                                </li>
+                            </ul>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                    <!-- Third Tilting Card -->
+                    <div class="tilting-card-wrapper col-lg-8">
+                      <div class="mouse-position-tracker"></div>
+                      <div class="mouse-position-tracker"></div>
+                      <div class="mouse-position-tracker"></div>
+                      <div class="mouse-position-tracker"></div>
+                      <div class="mouse-position-tracker"></div>
+                      <div class="mouse-position-tracker"></div>
+                      <div class="mouse-position-tracker"></div>
+                      <div class="mouse-position-tracker"></div>
+                      <div class="mouse-position-tracker"></div>
+                        <div class="tilting-card-content">
+                          <article class="postcard dark blue" data-tilt data-tilt-scale="0.95" data-tilt-perspective="1750">
+                            <a class="companylogo-container">
+                              <img class="CompanyLogo" src="CompanyLogos/TextronAviationLogo.png" alt="Image Title" />
+                            </a>
+                              <div class="postcard__text postcard__text-left">
+                                <h1 class="tile-text text-title blue"><a>Propulsion Engineer Intern</a></h1>
+                                <div class="tile-text text-time text-underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                      <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                    </svg><span> </span>May 2021 - August 2021
+                              </div>
+                              <!-- Description -->
+                              <div class="tile-text text-subtitle">
+                                Helped the Propulsion Sustainment team do root cause analysis for fuel system failure on the Longitude line of jets and
+                                geometric tolerancing on fuel rib interfaces of XLS.
+                              </div>
+                              <!-- Skills Used -->
+                              <ul class="skills-used text-time">
+                                  <li class="tag__item tag-one">
+                                  <img class="icon" src="SoftwareLogos/CATIALogo.png" >
+                                    CATIA V6
+                                  </li>
+                                  <li class="tag__item">
+                                    <span class="iconify mr-1 aws-icon" data-icon="cib:amazon-aws" data-inline="false">
+                                    <img class="icon" src="SoftwareLogos/ExcelLogo.png" >  
+                                    Excel
+                                    </span>
+                                  </li>
+                              </ul>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                </div>
+            </section>
+            <!-- Section Divider -->
+            <section id="Projects">
+                <hr class="rule-lg" />
+                <h4>Projects</h4>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="Images/ProjectImages/DesertSwallow.png"  class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Desert Swallow</h5>
+                        <p class="card-text">
+                          Myself and 8 other aerospace engineering undergrad students were tasked with designing, manufacturing, and test-flying
+                          a model airplane. Learn more about this project on the project page!
+                        </p>
+                        <a href="desertswallow.html" class="btn btn-primary">Project Page</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="Images/ProjectImages/MoviePickerLogo.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Movie Picker</h5>
+                        <p class="card-text">This is a personal project to implement an Front-End Interface for querying the OMDb Movie Database with a REST API and displaying it in a user-friendly manner.
+                          Long term goal is to implement User Authentication/Registration, saving favorited movies to a relational database and finding a way to generate uniqe recommendations based on user activty.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="Images/ProjectImages/CrinionBot.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Discord Bot</h5>
+                        <p class="card-text">This was a collaborative project with one of my friends to create a bot for a discord server.
+                          It is hosted on Google Cloud with a Python Engine and a MongoDB backend</p>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                </div>
+            </section>
+          <!-- Section Divider -->
+          <div id="Contact" class="container-fluid">
+          <div class="container">
+            <hr class="rule-lg" />
+          </div>
+          <!-- Contact Me -->
+            <h4>Contact Me</h4>
+              <br>
+              <div class="container-fluid" style="text-align: center">
+                <!-- Github Button  -->
+                <a href="https://github.com/gomeii"><button type="button" role="link" class="btn btn-social-icon btn-github btn-rounded"><i class="fa fa-github"></i></button></a>
+                <!-- LinkedIn Button -->
+                <a href="https://www.linkedin.com/in/alexander-gomez-10/"><button type="button" class="btn btn-social-icon btn-linkedin btn-rounded"><i class="fa fa-linkedin"></i></button></a>
+                <!-- Mail Button -->
+                <button data-toggle="modal" data-target="#MailModal" type="button" class="btn btn-social-icon btn-envelope btn-rounded"><i class="fa fa-envelope"></i></button>
+                <!-- Modal -->
+                <div class="modal fade" id="MailModal" tabindex="-1" role="dialog" aria-labelledby="MailModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="MailModalLabel"><b>Mail Input Form</b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>**************This feature is currently not working************</p>
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                          <div class="md-form mb-2">
+                            <input type="text" id="name" name="name" placeholder="Name..." class="form-control">
+                          </div>
+                          <div class="md-form mb-2">
+                            <input type="text" id="email" name="email" placeholder="E-mail@example.com..." class="form-control">
+                          </div>
+                            <textarea type="message" id="message" name="subject" placeholder="Subject..." rows="4" class="form-control"></textarea>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Submit Form</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Instragram Button -->
+                <!-- <button type="button" class="btn btn-social-icon btn-instagram btn-rounded"><i class="fa fa-instagram"></i></button> -->
+              </div>
+          </div>
+          <br><br>
+        
+        
+      
+
+
+  </div>
+</div>
+  
+</div>
+
+</body>
+</html>

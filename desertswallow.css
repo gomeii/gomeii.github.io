@@ -1,0 +1,149 @@
+/* ////////////// */
+/* Desert Swallow */
+/* ////////////// */
+.horizontal-break{
+    color:rgb(249, 249, 249);
+    opacity: 50%;
+    font-size: large;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .background{
+    place-items:center;
+    padding-bottom:2%;
+    margin-bottom:0;
+    /* background-image: src("wallpaperflare.com_wallpaper.jpg"); */
+  }
+  .background-gradient{
+    display:flex;
+    height: 10vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, #272822 20%, rgb(85, 51, 51) 74%);
+    margin-top:0;
+  }
+  .capstone-background{
+    background-color: rgb(85, 51, 51);
+  }
+  #TeamPicture{
+    max-height:45%;
+  }
+  .header-picture{
+    height:auto;
+    max-width: 55%;
+    max-height: 30%;
+    display: block;
+    padding-top:1%;
+    margin-left:auto;
+    margin-right:auto;
+    background-image: linear-gradient(to bottom, black, transparent);
+    border-radius:10%;
+  }
+  .header-title{
+    color:white; 
+  }
+  .capstone-text{
+    font-family: "Montserrat", sans-serif;
+    position:relative;
+    padding-left:5%;
+    text-align:left;
+    color:aliceblue;
+  }
+  .header-text{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    font-weight: 600;
+    position:relative;
+    padding-left:5%;
+    text-align:left;
+    color:aliceblue;
+  }
+  .reveal-text-container{
+    padding:0%;
+  }
+  .reveal-text-container .reveal-text{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 7.5vw;
+    font-weight: 600;
+    position:relative;
+    text-align:center;
+    color:transparent;
+  
+    animation: showText forwards ease-out;
+    animation-duration: 1000ms;
+    animation-delay: 1400ms;
+  }
+  .reveal-text-container .reveal-bg{
+    position:absolute;
+    top:0%;
+    height:auto;
+    width:100%;
+    left:0;
+    background-repeat: no-repeat;
+  
+  
+    animation: revealText 1500ms ease-out;
+    animation-duration: 2000ms;
+  }
+  
+  .TeamLogoLeft{
+    padding-top: 3%;
+    padding-right: 2%;
+    padding-left: 10%;
+    height:auto;
+    width:15%;
+  }
+  .TeamLogoRight{
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-left: 2%;
+    height:auto;
+    width:15%;
+  }
+  
+  @keyframes revealText{
+    0%{
+      width:0%;
+      left:0%;
+    }
+    40%{
+      width:20%;
+      left:0%;
+    }
+    80%{
+      width:100%;
+      left:0%;
+    }
+  
+    100%{
+      width:0%;
+      left:100%
+    }
+  }
+  
+  @keyframes showText{
+    to{
+      color:aliceblue;
+    }
+  }
+
+
+  .regulations{
+    padding-bottom:5%;
+  }
+
+  .build{
+    padding-bottom: 10%;
+  }
+  .carousel-image{
+    object-fit:cover;
+    width:auto;
+    height:60vh;
+    border-radius:20%;
+
+    .video-container{
+        border-radius:20%;
+    }
+  }

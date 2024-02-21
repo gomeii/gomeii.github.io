@@ -1,0 +1,312 @@
+.AboutMeText{
+  padding:5%;
+  margin-left:auto;
+  margin-right:auto;
+}
+/* Navbar */
+.navbar-collapse{
+  padding: 1%;
+}
+/* Sticky Navbar */
+.navbar-nav-scroll{
+  position:sticky;
+  top: 5%;
+  justify-content: center;
+
+}
+.navbar-brand{
+  
+}
+
+.scroll-nav{
+  width: fit-content;
+  min-width: 20%;
+  justify-content: center;
+  padding-right:0%;
+  padding-left: 2%;
+}
+.navbar-trans {
+  transition: all 0.3s ease;
+}
+.nav-link{
+  justify-content:space-evenly;
+}
+.nav-item{
+  float:left;
+  justify-self: auto;
+}
+.navbar-nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.nav-item button{
+  margin-top:2%;
+  padding-top:10%;
+  padding-bottom:10%;
+}
+/* //////////////////// */
+/* Introduction Section */
+/* //////////////////// */
+.headshot{
+max-width:fit-content;
+width:50%;
+height:auto;
+top: 10%;
+border-radius: 50%;
+}
+.personal-quote{
+padding-top: 3%;
+padding-left:5%;
+width:30%;  
+height:auto;
+size: contain;
+}
+.introduction{
+text-align: center;
+justify-content: center;
+height: fit-content;
+padding-top:3%;
+padding-bottom:3%;
+margin-right: 5%;
+margin-left: 5%;
+}
+.landing-page{
+  padding-top:2%;
+  justify-content: center;
+}
+/* Main Content Container */
+.main-content-container{
+  max-width:75%;
+  min-width:auto;
+  margin-right:2%;
+}
+
+/* ////////////////// */
+/* Experience Section */
+/* ////////////////// */
+
+.section-experience{
+  display:flex;
+  justify-content: center;
+  font-size-adjust:fit-content;
+}
+/* Tilting Card */
+.content-wrapper{
+  display:grid;
+  top:1%;
+  padding-left:15%;
+  padding-right:10%;
+  max-height: fit-content;
+}
+
+.text-title{
+  font-size: 3vmin;
+  color:aliceblue;
+}
+.text-subtitle{
+  font-size: 2.5vmin;
+  color:aliceblue;
+}
+.text-time{
+  font-size: 2vmin;
+  color:aliceblue;
+  font:bold !important;
+  padding-bottom: 1%;
+}
+.companylogo-container{
+ padding:5%;
+}
+.CompanyLogo{
+  background-color: white;
+  border-radius: 7%;
+  width: 80%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 10%;
+}
+ul{
+  justify-content: left;
+}
+li{
+  list-style-type: none;
+  justify-content: left;
+}
+.skills-used{
+  height: 25%;
+  width:auto;
+  color: aliceblue;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  padding: 4.5px 10px;
+  margin: 5px 5px 5px 5px;
+  cursor: default;
+  user-select: none;
+  border:rgb(0, 0, 0);
+  border-width: 15px;
+  transition: background-color 0.1s;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: left;
+  font-size: 2.2vmin;
+}
+.icon{
+  width: 3vh;
+}
+.tilting-card-wrapper{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  position: relative;
+  margin: 5%;
+  max-width: 350px;
+  max-height: 600px;
+  width:fit-content;
+}
+.tilting-card-content{
+
+
+  --perspective: 2000px;
+  --rotateX: 0;
+  --rotateY: 0;
+  --angle: 7deg;
+
+  grid-column: 1/-1;
+  grid-row: 1/-1; 
+
+  display: grid;
+  place-content: center;
+  text-align: center;
+  box-shadow:#031625;
+  padding: 3em;
+  padding-left:10%;
+  padding-right:10%;
+  /* background-image: url(TextronAviationLogo.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
+  background: linear-gradient(to left top, rgb(18, 4, 170), rgb(33, 124, 228));
+  border-radius: 5%;
+  transform: 
+    perspective(var(--perspective))
+    rotateX(var(--rotateX))
+    rotateY(var(--rotateY));
+  transition: transform 350ms ease;
+}
+.mouse-position-tracker{
+  position:absolute;
+  inset:0;
+  z-index:4;
+
+}
+.mouse-position-tracker:nth-child(1):hover ~ .tilting-card-content {
+  --rotateX: var(--angle);
+  --rotateY: calc(var(--angle) * -1);
+}
+.mouse-position-tracker:nth-child(2):hover ~ .tilting-card-content {
+  --rotateX: var(--angle);
+}
+.mouse-position-tracker:nth-child(3):hover ~ .tilting-card-content {
+  --rotateX: var(--angle);
+  --rotateY: var(--angle);
+}
+.mouse-position-tracker:nth-child(4):hover ~ .tilting-card-content {
+  --rotateY: calc(var(--angle) * -1);
+}
+.mouse-position-tracker:nth-child(6):hover ~ .tilting-card-content {
+  --rotateY: calc(var(--angle) * 1);
+}
+.mouse-position-tracker:nth-child(7):hover ~ .tilting-card-content {
+  --rotateX: calc(var(--angle) * -1);
+  --rotateY: calc(var(--angle) * -1);
+}
+.mouse-position-tracker:nth-child(8):hover ~ .tilting-card-content {
+  --rotateX: calc(var(--angle) * -1);
+}
+.mouse-position-tracker:nth-child(9):hover ~ .tilting-card-content {
+  --rotateX: calc(var(--angle) * -1);
+  --rotateY: calc(var(--angle) * 1);
+}
+/* 1st,2nd,3rd */
+.mouse-position-tracker:nth-of-type(3n-2){
+  grid-column: 1/2;
+}
+/* 2nd,5th,8th */
+.mouse-position-tracker:nth-of-type(3n-1){
+  grid-column: 2/3;
+}
+/* 3rd,6th,9th */
+.mouse-position-tracker:nth-of-type(3n){
+  grid-column: 3/4;
+}
+/* 1-3 */
+.mouse-position-tracker:nth-child(n+1):nth-child(-n +3){
+  grid-row: 1/2;
+}
+/* 4-6 */
+.mouse-position-tracker:nth-child(n+4):nth-child(-n +6){
+  grid-row: 2/3;
+}
+/* 7-9 */
+.mouse-position-tracker:nth-child(n+7):nth-child(-n + 9){
+  grid-row: 3/4;
+}
+
+/* //////////////// */
+/* Projects Section */
+/* //////////////// */
+
+.section-projects{
+  display:flex;
+  justify-content:space-evenly;
+}
+.card-img-top{
+  padding-top: 3%;
+  padding-right: 5%;
+  padding-left: 5%;
+  min-height: auto;
+  max-height: 30vh;
+  max-width: fit-content;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+/* /////////////////// */
+/* Contact Me Section */
+/* ////////////////// */
+.fa {
+  width: 50px;
+  height: 50px;
+  font-Size: 3.7vh;
+  padding-top: 22%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color:black;
+  color: white;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+/* Set a specific color for each brand */
+
+
+
