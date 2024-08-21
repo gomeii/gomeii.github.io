@@ -319,16 +319,17 @@
                         </button>
                       </div>
                       <div class="modal-body">
-                        <p>**************This feature is currently not working************</p>
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    
+                        <form id="contact-form" name="contact-form" action="https://formspree.io/f/xvgpwgpb" method="POST" accept-charset="utf-8">
                           <div class="md-form mb-2">
-                            <input type="text" id="name" name="name" placeholder="Name..." class="form-control">
+                            <input type="text" id="name" name="name" placeholder="Name..." class="form-control" required="">
                           </div>
                           <div class="md-form mb-2">
-                            <input type="text" id="email" name="email" placeholder="E-mail@example.com..." class="form-control">
+                            <input type="email" id="email-address" name="email" placeholder="E-mail@example.com..." required="" class="form-control">
                           </div>
                             <textarea type="message" id="message" name="subject" placeholder="Subject..." rows="4" class="form-control"></textarea>
                         </form>
+                        
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-primary">Submit Form</button>
