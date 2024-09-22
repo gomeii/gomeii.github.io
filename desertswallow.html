@@ -26,7 +26,7 @@
 
     <!-- Navbar when screen is maximized or fullscreen-->
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light bg-tertiary">
         <!-- Navbar Content -->
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src=Images/ProjectImages/Logo.png width="15%"></a>
@@ -35,10 +35,11 @@
           </button>
           <div class="collapse navbar-collapse container-fluid" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="desertswallow.html">Capstone</a></li>   
-              <li class="nav-item button"><a href="AlexGomez_Resume2024./" class="" target="_blank"><button type="button"
-                    class="btn btn-outline-dark btn-sm">Resume</button></a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link active text-underline" aria-current="page" href="desertswallow.html">Capstone</a></li>   
+              <li class="nav-item button"><a href="AlexGomez_Resume2024.pdf" class="" target="_blank">
+                <a><button type="button"class="btn btn-outline-dark btn-sm">Resume</button></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -59,10 +60,10 @@
     <!-- Content Sections -->
     <div class="capstone-background capstone-text">
       <!-- Regulations/Background -->
-      <div class="container regulations">
+      <div class="container-section regulations">
         <div class="row">
           <div class="col justify-content-center">
-            <h4 class="header-text"><b>Background</b></h4>
+            <h4>Background</h4>
             <p>For my senior capstone, I was tasked, alongside a group of 9 other aerospace engineering students,
               to design and build a plane for the given use case of that year.
               This was a 2-semester long course that taught us how to implement core concepts of systems engineering
@@ -72,8 +73,8 @@
               <a href="RFP_2022A_RAR_F1-v2.pdf" target="_blank"><button type="button" class="btn btn-outline-dark btn-sm">Request For Proposal used</button></a>
             </div>
           </div>
-          <div class="col justify-content-center" style="padding-top:5%">
-            <h4 class="header-text">Main Requirements:</h4>
+          <div class="col justify-content-center" style="padding-top:1%">
+            <h4>Main Requirements:</h4>
             <ul>
               <li>FAR 21 Experimental Certification</li>
               <li>Flight VFR Compliant</li>
@@ -85,7 +86,7 @@
         </div>
       </div>
       <!-- Build Process Section -->
-      <div class="container build">
+      <div class="container-section build">
         <div class="row">
           <div class="col">
             <h4 class="header-text">Build Process</h4>
@@ -111,10 +112,10 @@
         </div>
       </div>
       <!-- Flight Video Section -->
-      <div class="video-container video">
+      <div class="container-section video">
         <div class="row">
           <div class="col">
-            <h4 class="header-text">Flight Video</h4>
+            <h4>Flight Video</h4>
             <video class="video-container" width="100%" height="auto" controls> 
               <source src="Images/DesertSwallow/TrimmedFlightVideo.mp4" type="video/mp4">
             </video>
