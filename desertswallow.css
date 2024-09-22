@@ -1,149 +1,215 @@
-/* ////////////// */
-/* Desert Swallow */
-/* ////////////// */
-.horizontal-break{
-    color:rgb(249, 249, 249);
-    opacity: 50%;
-    font-size: large;
-    width: 70%;
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.header-text, h4 {
+  font-size: 3vh;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .header-text, h4 {
+    font-size: 2vw; /* Set a maximum size for larger screens */
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff; /* White background for the navbar */
+}
+
+/* Header Picture */
+/* Header Picture with Shadow */
+.header-picture {
+  width: 80vw;
+  height: auto;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 10%;
+  background-image: linear-gradient(to bottom, black, transparent);
+  position: relative;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Background shadow */
+}
+
+.header-picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: inherit;
+}
+
+/* Capstone Background */
+.landing-page-container {
+  background-color: #f8f9fa;
+  color: #333;
+  padding-top: 1rem; /* Padding from the navbar */
+  font-size:medium;
+}
+.reveal-text{
+  font-size-adjust: inherit;
+}
+
+/* Capstone Background */
+.capstone-background {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Text Scaling and Centering */
+capstone-text .p {
+  font-size: 1.8vw;
+  line-height: 1.6;
+  color: #333;
+  text-align: center; /* Center text horizontally */
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center Content Sections */
+.capstone-text {
+  max-width: 75%; /* Limit the width to center content */
+  margin: 0 auto; /* Center the section */
+}
+
+.capstone-text ul {
+  font-size: 2vh; /* Matching the font size of the background text */
+  text-align: center; /* Center text horizontally */
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 600px) {
+  .capstone-text p {
+    font-size: 15px;
     margin-left: auto;
     margin-right: auto;
   }
-  .background{
-    place-items:center;
-    padding-bottom:2%;
-    margin-bottom:0;
-    /* background-image: src("wallpaperflare.com_wallpaper.jpg"); */
+  .capstone-text li{
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .background-gradient{
-    display:flex;
-    height: 10vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, #272822 20%, rgb(85, 51, 51) 74%);
-    margin-top:0;
-  }
-  .capstone-background{
-    background-color: rgb(85, 51, 51);
-  }
-  #TeamPicture{
-    max-height:45%;
-  }
-  .header-picture{
-    height:auto;
-    max-width: 55%;
-    max-height: 30%;
-    display: block;
-    padding-top:1%;
-    margin-left:auto;
-    margin-right:auto;
-    background-image: linear-gradient(to bottom, black, transparent);
-    border-radius:10%;
-  }
-  .header-title{
-    color:white; 
-  }
-  .capstone-text{
-    font-family: "Montserrat", sans-serif;
-    position:relative;
-    padding-left:5%;
-    text-align:left;
-    color:aliceblue;
-  }
-  .header-text{
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    font-size: 3.5vw;
-    font-weight: 600;
-    position:relative;
-    padding-left:5%;
-    text-align:left;
-    color:aliceblue;
-  }
-  .reveal-text-container{
-    padding:0%;
-  }
-  .reveal-text-container .reveal-text{
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    font-size: 7.5vw;
-    font-weight: 600;
-    position:relative;
-    text-align:center;
-    color:transparent;
-  
-    animation: showText forwards ease-out;
-    animation-duration: 1000ms;
-    animation-delay: 1400ms;
-  }
-  .reveal-text-container .reveal-bg{
-    position:absolute;
-    top:0%;
-    height:auto;
-    width:100%;
-    left:0;
-    background-repeat: no-repeat;
-  
-  
-    animation: revealText 1500ms ease-out;
-    animation-duration: 2000ms;
-  }
-  
-  .TeamLogoLeft{
-    padding-top: 3%;
-    padding-right: 2%;
-    padding-left: 10%;
-    height:auto;
-    width:15%;
-  }
-  .TeamLogoRight{
-    padding-top: 3%;
-    padding-right: 10%;
-    padding-left: 2%;
-    height:auto;
-    width:15%;
-  }
-  
-  @keyframes revealText{
-    0%{
-      width:0%;
-      left:0%;
-    }
-    40%{
-      width:20%;
-      left:0%;
-    }
-    80%{
-      width:100%;
-      left:0%;
-    }
-  
-    100%{
-      width:0%;
-      left:100%
-    }
-  }
-  
-  @keyframes showText{
-    to{
-      color:aliceblue;
-    }
-  }
+}
 
-
-  .regulations{
-    padding-bottom:5%;
+@media (min-width: 1000px) {
+  .capstone-text p {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-  .build{
-    padding-bottom: 10%;
+  .capstone-text li{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .carousel-image{
-    object-fit:cover;
-    width:auto;
-    height:60vh;
-    border-radius:20%;
+}
 
-    .video-container{
-        border-radius:20%;
-    }
+/* Centering the Button */
+.capstone-text .button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 1rem; /* Add some space above the button */
+}
+
+/* Section Spacing */
+.regulations, .build, .video {
+  padding: 5rem 0;
+}
+
+/* Carousel Images */
+.carousel-image {
+  object-fit: cover;
+  width: 80vw;
+  height: auto;
+  border-radius: 20%;
+}
+
+/* Video Container */
+.video-container {
+  display: block;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Buttons */
+.btn-outline-dark {
+  color: #333;
+  border-color: #333;
+}
+
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Horizontal Break */
+.horizontal-break {
+  color: #f9f9f9;
+  opacity: 50%;
+  font-size: large;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Reveal Text Animation */
+.reveal-text-container .reveal-text {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 7.5vw;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  color: transparent;
+  animation: showText forwards ease-out;
+  animation-duration: 1000ms;
+  animation-delay: 1400ms;
+}
+
+.reveal-text-container .reveal-bg {
+  position: absolute;
+  top: 0%;
+  height: auto;
+  width: 100%;
+  left: 0;
+  background-repeat: no-repeat;
+  animation: revealText 1500ms ease-out;
+  animation-duration: 2000ms;
+}
+
+@keyframes revealText {
+  0% {
+    width: 0%;
+    left: 0%;
   }
+  40% {
+    width: 20%;
+    left: 0%;
+  }
+  80% {
+    width: 100%;
+    left: 0%;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
+
+@keyframes showText {
+  to {
+    color: rgb(6, 23, 35);
+  }
+}

@@ -25,9 +25,9 @@
   <span id="top"></span>
 
     <!-- Navbar when screen is maximized or fullscreen-->
-    <header class="header-top">
-     
-      <nav class="navbar navbar-trans navbar-expand-lg bg-body-tertiary">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <!-- Navbar Content -->
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src=Images/ProjectImages/Logo.png width="15%"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,50 +37,43 @@
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" aria-current="page" href="desertswallow.html">Capstone</a></li>   
-              <li class="nav-item button"><a href="AlexGomez_Resume2024.pdf" class="" target="_blank"><button type="button"
+              <li class="nav-item button"><a href="AlexGomez_Resume2024./" class="" target="_blank"><button type="button"
                     class="btn btn-outline-dark btn-sm">Resume</button></a></li>
             </ul>
           </div>
         </div>
       </nav>
 
-    </header>
-    <!-- Solid Background Black Color -->
-    <div class="background" style="background-color: #272822">
-      <div class="container-fluid">
-          <!-- <img class="TeamLogoLeft align-left" src="Pictures/DesertSwallow/DesertSwallowLogoV2 (1).png"> -->
-          <img class="header-picture center" id="TeamPicture" src="Images/DesertSwallow/FlightDay/FlightDayTeamPicturePosed.jpg">
-          <!-- <img class="TeamLogoRight align-right" src="Pictures/DesertSwallow/DesertSwallowLogoV2 (1).png"> -->
-      </div>
+
+    <!-- Header Section -->
+    <div class="landing-page-container">
       <div class="reveal-text-container">
         <h2 class="reveal-text">Desert Swallow<span class="reveal-bg"></span></h2>
       </div>
-      <!-- <hr class="horizontal-break"> -->
+      <div class="container-fluid">
+        <img class="header-picture center img-fluid" id="TeamPicture" src="Images/DesertSwallow/FlightDay/FlightDayTeamPicturePosed.jpg">
+      </div>
     </div>
-    <div class="background-gradient">
-    </div>
+    <div class="background-gradient"></div>
 
-    <div class ="capstone-background capstone-text">
-
+    <!-- Content Sections -->
+    <div class="capstone-background capstone-text">
+      <!-- Regulations/Background -->
       <div class="container regulations">
         <div class="row">
-          <!-- Background Section -->
-          <h4 class="header-text">Background</H4>
-          <div class="col">
-            <p>For my senior capstone I was tasked, alongside a group of 9 other aerospace engineering students, to design and build a plane for the given use case of that year.
-              This would be a 2 semester long course that would teach us how to implement core concepts of systems engineering as well as aerospace design and integration.
-              <br>
-              The first half of the 2 semester Capstone Design entailed designing a full scale Formula 1 Air Race plane for the Reno Air Race.
-              <br>
-              The second half of the 2 semester Capstone Design was focused on fully building and integrating a scaled down version of the design we had made the first semester. 
+          <div class="col justify-content-center">
+            <h4 class="header-text"><b>Background</b></h4>
+            <p>For my senior capstone, I was tasked, alongside a group of 9 other aerospace engineering students,
+              to design and build a plane for the given use case of that year.
+              This was a 2-semester long course that taught us how to implement core concepts of systems engineering
+              as well as aerospace design and integration.
             </p>
-            <div class="container-fluid" style="justify-content: center"><a href="RFP_2022A_RAR_F1-v2.pdf" class="" style="justify-content:center" target="_blank"><button type="button"
-              class="btn btn-outline-light btn-sm">Request For Proposal used</button></a>
+            <div class="container-fluid">
+              <a href="RFP_2022A_RAR_F1-v2.pdf" target="_blank"><button type="button" class="btn btn-outline-dark btn-sm">Request For Proposal used</button></a>
             </div>
-            <br>
           </div>
-          <div class="col">
-            <h6><u>Main Requirements:</u></h6>
+          <div class="col justify-content-center" style="padding-top:5%">
+            <h4 class="header-text">Main Requirements:</h4>
             <ul>
               <li>FAR 21 Experimental Certification</li>
               <li>Flight VFR Compliant</li>
@@ -90,110 +83,46 @@
             </ul>
           </div>
         </div>
-        
       </div>
-      <!-- Build Process -->
+      <!-- Build Process Section -->
       <div class="container build">
         <div class="row">
-          <h4 class="header-text">Build Process</H4>
-          <div class="col fluid-container">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height:50%">
-              <!-- <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-              </div> -->
+          <div class="col">
+            <h4 class="header-text">Build Process</h4>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="Images/DesertSwallow/BuildProcess/20221021_190448.jpg" class="carousel-image d-block w-100" alt="Slide 0">
-                  <div class="carousel-caption d-none d-md-block">
-                    <!-- <h5>First slide label</h5> -->
-                    <!-- <p>Some representative placeholder content for the first slide.</p> -->
-                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="Images/DesertSwallow/BuildProcess/B8BF293F-EE2A-43C2-9111-00C280068730.jpg" class="carousel-image d-block w-100" alt="Slide 1">
-                  <div class="carousel-caption d-none d-md-block">
-                    <!-- <h5>Second slide label</h5> -->
-                    <!-- <p>Some representative placeholder content for the second slide.</p> -->
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="Images/DesertSwallow/BuildProcess/IMG_4451.jpg" class="carousel-image d-block w-100" alt="Slide 2">
-                  <div class="carousel-caption d-none d-md-block">
-                    <!-- <h5>Third slide label</h5> -->
-                    <!-- <p>Some representative placeholder content for the third slide.</p> -->
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="Images/DesertSwallow/BuildProcess/IMG_4447.jpg" class="carousel-image d-block w-100" alt="Slide 3">
-                  <div class="carousel-caption d-none d-md-block">
-                    <!-- <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p> -->
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="Images/DesertSwallow/BuildProcess/IMG_2411.jpg" class="carousel-image d-block w-100" alt="Slide 4">
-                  <div class="carousel-caption d-none d-md-block">
-                    <!-- <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p> -->
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="Images/DesertSwallow/BuildProcess/IMG_2413.jpg" class="carousel-image d-block w-100" alt="Slide 5">
-                  <div class="carousel-caption d-none d-md-block">
-                    <!-- <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p> -->
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="Images/DesertSwallow/BuildProcess/IMG_7756.jpg" class="carousel-image d-block w-100" alt="Slide 6">
-                  <div class="carousel-caption d-none d-md-block">
-                    <!-- <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p> -->
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="Images/DesertSwallow/BuildProcess/IMG_7770.jpg" class="carousel-image d-block w-100" alt="Slide 7">
-                  <div class="carousel-caption d-none d-md-block">
-                    <!-- <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p> -->
-                  </div>
-                </div>
-
-
+                <!-- Additional slides here -->
               </div>
-              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <!-- Uncomment these if you want controls or indicators
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-              </button> -->
+              </button>
+              -->
             </div>
           </div>  
         </div>
       </div>
-
-      <!-- Flight Video -->
-      <div class="container video">
+      <!-- Flight Video Section -->
+      <div class="video-container video">
         <div class="row">
-          <h4 class="header-text">Flight Video</h4>
-          <div class="col fluid container video-div">
+          <div class="col">
+            <h4 class="header-text">Flight Video</h4>
             <video class="video-container" width="100%" height="auto" controls> 
               <source src="Images/DesertSwallow/TrimmedFlightVideo.mp4" type="video/mp4">
             </video>
           </div>
         </div>
       </div>
-
-
     </div>
     
 
     </body>
+</html>
