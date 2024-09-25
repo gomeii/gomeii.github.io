@@ -273,17 +273,23 @@ li{
   display:flex;
   justify-content:space-evenly;
 }
+
+.card-body{
+  flex-grow:1;
+}
+.card-footer {
+  margin-top: auto;
+}
 .card-img-top{
   padding-top: 3%;
-  padding-right: 5%;
-  padding-left: 5%;
   min-height: auto;
   max-height: 30vh;
   max-width: fit-content;
   margin-left:auto;
   margin-right:auto;
+  object-fit: cover;
+  height: 200px; /* Fixed height to ensure images are the same size */
 }
-
 
 /* /////////////////// */
 /* Contact Me Section */
