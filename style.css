@@ -66,9 +66,9 @@ top: 10%;
 border-radius: 50%;
 }
 .personal-quote{
-padding-top: 3%;
-padding-left:5%;
-width:30%;  
+margin-top:auto;
+margin-bottom:auto;
+width:100%;  
 height:auto;
 size: contain;
 }
@@ -76,13 +76,12 @@ size: contain;
 text-align: center;
 justify-content: center;
 height: fit-content;
-padding-top:3%;
-padding-bottom:3%;
-margin-right: 5%;
-margin-left: 5%;
+padding-top:1%;
+padding-bottom:2%;
+margin-right: 3%;
+margin-left: 3%;
 }
 .landing-page{
-  padding-top:2%;
   justify-content: center;
 }
 /* Main Content Container */
